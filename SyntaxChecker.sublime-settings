@@ -1,0 +1,8 @@
+/*
+	SyntexChecker default settings
+*/
+{
+	"ruby_syntax_checker_cmd": "/usr/bin/ruby",
+	"perl_syntax_checker_cmd": "/usr/bin/perl",
+	"php_syntax_checker_cmd": "/usr/bin/php"
+}
