@@ -14,6 +14,13 @@ Supported languages
 * Perl
 * PHP
 
+Supported platforms
+-------------------
+
+This plugin has been tested on Linux platform and should work the same on OS/X or Windows platforms. It has NOT been tested ont those last two.
+
+If you encounter some problem with OS/X or Windows, register an issue or submit a pull request on [GitHub](https://github.com/srilumpa/SyntaxChecker).
+
 Installation
 ------------
 
