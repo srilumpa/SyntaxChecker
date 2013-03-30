@@ -13,6 +13,7 @@ Supported languages
 * Ruby
 * Perl
 * PHP
+* XML
 
 Supported platforms
 -------------------
