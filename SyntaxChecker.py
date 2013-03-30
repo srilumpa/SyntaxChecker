@@ -8,6 +8,8 @@ class SyntaxChecker(sublime_plugin.EventListener):
 			view.window().run_command("perl_checker", {"saving": True})
 		elif view.file_name()[-4:] == '.php' or view.file_name()[-8:] == '.php.inc':
 			view.window().run_command("php_checker", {"saving": True})
+		elif view.file_name()[-4:] == '.xml':
+			view.window().run_command("xml_checker", {"saving": True})
 
 class RubyCheckerCommand(sublime_plugin.TextCommand):
 	def run(self, edit, saving=False):
@@ -32,3 +34,11 @@ class PhpCheckerCommand(sublime_plugin.TextCommand):
 		cmd_setting = 'php_syntax_checker_cmd'
 		php = view.settings().get(cmd_setting, global_settings.get(cmd_setting))
 		view.window().run_command("exec", {"cmd": [php, "-l", view.file_name()]})
+
+class XmlCheckerCommand(sublime_plugin.TextCommand):
+	def run(self, edit, saving=False):
+		view = self.view
+		global_settings = sublime.load_settings(__name__ + '.sublime-settings')
+		cmd_setting = 'xml_syntax_checker_cmd'
+		xml = view.settings().get(cmd_setting, global_settings.get(cmd_setting))
+		view.window().run_command("exec", {"cmd": [xml, "--noout", view.file_name()]})
