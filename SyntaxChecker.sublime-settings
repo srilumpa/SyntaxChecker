@@ -4,5 +4,6 @@
 {
 	"ruby_syntax_checker_cmd": "ruby",
 	"perl_syntax_checker_cmd": "perl",
-	"php_syntax_checker_cmd": "php"
+	"php_syntax_checker_cmd": "php",
+	"xml_syntax_checker_cmd": "xmllint"
 }
