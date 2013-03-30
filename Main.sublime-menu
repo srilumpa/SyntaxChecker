@@ -1,0 +1,31 @@
+[
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children":
+		[
+			{
+				"caption": "SyntaxChecker",
+				"children":
+				[
+					{
+						"command": "open_file",
+						"args": {"file": "${packages}/SyntaxChecker/README.md"},
+						"caption": "README"
+					},
+					{
+						"command": "open_file",
+						"args": {"file": "${packages}/SyntaxChecker/SyntaxChecker.sublime-settings"},
+						"caption": "Settings - default"
+					},
+					{
+						"command": "open_file",
+						"args": {"file": "${packages}/User/SyntaxChecker.sublime-settings"},
+						"caption": "Settings - User"
+					}
+				]
+			}
+		]
+	}
+]
