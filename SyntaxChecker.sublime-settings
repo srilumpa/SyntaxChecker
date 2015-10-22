@@ -6,7 +6,7 @@
     "perl_syntax_checker_cmd": "perl",
     "php_syntax_checker_cmd": "php",
     "xml_syntax_checker_cmd": "xmllint",
-    "extensions": {
+    "checker_extensions": {
         "ruby": [".rb"],
         "xml": [".xml"],
         "perl": [".pl"],
