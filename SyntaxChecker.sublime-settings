@@ -1,9 +1,15 @@
 /*
-	SyntexChecker default settings
+    SyntexChecker default settings
 */
 {
-	"ruby_syntax_checker_cmd": "ruby",
-	"perl_syntax_checker_cmd": "perl",
-	"php_syntax_checker_cmd": "php",
-	"xml_syntax_checker_cmd": "xmllint"
+    "ruby_syntax_checker_cmd": "ruby",
+    "perl_syntax_checker_cmd": "perl",
+    "php_syntax_checker_cmd": "php",
+    "xml_syntax_checker_cmd": "xmllint",
+    "checker_extensions": {
+        "ruby": [".rb"],
+        "xml": [".xml"],
+        "perl": [".pl"],
+        "php": [".php", ".php.inc"]
+    }
 }
